@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            .googlesearch {
+                text-align: right;
+                margin-bottom: 20px;
+            }
+            .googlesearch a {
+                text-decoration: none;
+                color: #4285f4;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 10px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+            .googlesearch a:hover {
+                background-color: #e8f0fe;
+            }
+            h1 {
+                color: #4285f4;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: 500;
+                color: #555;
+                margin-bottom: 15px;
+            }
+            .searchbar {
+                width: 100%;
+                max-width: 400px;
+                padding: 10px;
+                margin: 5px 0 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 14px;
+            }
+            #advancedsearchbar {
+                background-color: #4285f4;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 14px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            #advancedsearchbar:hover{
+                background-color: #3367d6;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+            div {
+                margin-bottom:10px;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                max-width: 500px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="googlesearch">
+            <a href="index.html">Google Search</a>
+        </div>
+        <h1>Advanced Search</h1>
+        <h2>Find pages with...</h2>
+        <form action="https://www.google.com/search">
+        <div>
+            all these words:
+            <input class="searchbar" name="as_q" type="text">
+        </div>
+        <div>
+            this exact word or phrase:
+            <input class="searchbar" name="as_epq" type="text">
+        </div>
+        <div>
+            any of these words:
+            <input class="searchbar" name="as_oq" type="text">
+        </div>
+        <div>
+            none of these words:
+            <input class="searchbar" name="as_eq" type="text">
+        </div>
+        <div>
+            <input id="advancedsearchbar" type="submit" value="Advanced Search">
+        </div>
+        </form>
+    </body>
+</html>
