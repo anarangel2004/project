@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            .googlesearch {
+                text-align: right;
+                margin-bottom: 20px;
+            }
+            .googlesearch a {
+                text-decoration: none;
+                color: #4285f4;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 10px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+            .googlesearch a:hover {
+                background-color: #e8f0fe;
+            }
+            form {
+                text-align: center;
+            }
+            .searchbar {
+                width: 100%;
+                max-width: 400px;
+                padding: 10px;
+                margin: 5px 0 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 14px;
+            }
+            #googlesearchbar {
+                background-color: #4285f4;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 14px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            #googlesearchbar:hover{
+                background-color: #3367d6;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+            #imagesearch, #advancedsearch {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="googlesearch">
+            <a href="imagesearch.html">Google Image Search</a>
+        </div>
+        <div class="googlesearch">
+            <a href="advancedsearch.html">Google Advanced Search</a>
+        </div>
+        <form action="https://www.google.com/search">
+            <div><input class="searchbar" type="text" name="q"></div>
+            <div><input id="googlesearchbar"type="submit" value="Google Search"></div>
+        </form>
+    </body>
+</html>
